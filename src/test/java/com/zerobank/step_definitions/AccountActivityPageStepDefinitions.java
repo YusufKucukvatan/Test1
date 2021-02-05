@@ -19,6 +19,7 @@ public class AccountActivityPageStepDefinitions {
     public void dropdownOptionsShouldBeFollowingItems(List<String> expectedOptions) {
         List<String> actualOptions=accountActivityPage.dropdownOptions();
         Assert.assertEquals("Options not matched", expectedOptions, actualOptions);
+        Assert.assertEquals("XYZ", expectedOptions, actualOptions);
 
     }
 
